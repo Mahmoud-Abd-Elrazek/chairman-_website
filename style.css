@@ -252,7 +252,7 @@ nav {
     left: 0;
     display: grid;
     place-items: center;
-    background: var(--header-bj);
+    background: var(--bg-color);
 }
 
 .nav-container { 
