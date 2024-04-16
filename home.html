@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Home</title>
+</head>
+<body>
+    <!-- Loading Start -->
+    <div class="preloder-container">
+        <div class="preloder">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <!-- Loading End -->
+
+    <!-- ====================== Start nav-bar ====================== -->
+    <nav>
+        <div class="container nav-container">
+            <a href="" class="logo">Elharthy</a>
+            <ul class="nav-links">
+                <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li>
+                    <a href="mailto:chairman@hpc-hospitality.com" title="mail me">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+966530463333" title="call me"><i class="fa-solid fa-phone"></i></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/+966530463333" title="Share on whatsapp" target="_blank" title="sned me">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@hpchotel687" title="channel">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.hpc-hospitality.com/" title="go to website">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </li>
+
+                <button class="btn-toggle btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+            <button class="bar-icon">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- ====================== End nav-bar ====================== -->
+
+
+    <!-- ====================== Start Header ====================== -->
+    <header>
+        <div class="container header-container">
+            <div class="header-left">
+                <img src="images/icon.png" alt="" class="profile-pic">
+            </div>
+            <div class="header-right">
+                <p><b>hello , I'm</b></p>
+                <h1>Khaled Elharthy</h1>
+                <h2>Chairman <!-- of the board of directors--></h2> 
+                <div class="header-action-area">
+                    <a href="" class="btn">Download CV</a>
+                    <a href="#info" class="btn btn-dark">Contact info</a>
+                </div>
+                <div class="header-social">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====================== End Header ====================== -->
+    
+    
+    <!-- ====================== Start Sites ====================== -->
+    <section class="container sites" id="info">
+        <h3 class="sec-add">Visit our websites</h3>
+        <div class="btns">
+            <button class="button-86 " role="button" title="شركة تضمين للمقاولات العامة">
+                <a href="https://tadmensa.com/">
+                    شركة تضمين
+                </a>
+            </button>
+            <button class="button-86 " role="button" title="شركة الريادة الفندقية">
+                <a href="https://www.hpc-hospitality.com/">
+                    الريادة الفندقية
+                </a>
+            </but>
+            <button class="button-86 " role="button" title="poineer">
+                <a href="https://www.hpc-hospitality.com/">poineer</a> 
+            </button>
+        </div>
+    </section>
+    <!-- ====================== End Sites ====================== -->
+
+    
+    <!-- ====================== Start section to add  locations ====================== -->
+    <section class="container videos-section">
+
+        <div class="row">
+            
+            <div class="col">
+                <div class="img-feature">
+                    <img src="images/imgVid1.png">
+                    <i class="fa-solid fa-circle-play play-icon" onclick="palyVideo('videos/vid2.mp4')" ></i>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/imgVid1.png">
+                        <i class="fa-solid fa-circle-play play-icon" 
+                        onclick="palyVideo('videos/vid1.mp4')"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem officiis tempore velit deserunt! Delectus, ea!o</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/imgVid2.png">
+                        <i class="fa-solid fa-circle-play play-icon" 
+                        onclick="palyVideo('videos/vid1.mp4')"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem officiis tempore velit deserunt! Delectus, ea!</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="video-player" id="video-player">
+            <video controls id="my-video" class="show-video video">
+                <source src="videos/vid1.mp4" type="video/mp4">
+                <source src="videos/vid1.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <i class="fa-solid fa-circle-xmark close-icon"></i>
+        </div>
+
+    </section>
+    <!-- ====================== End section to add  locations ====================== -->
+
+
+    <!-- ====================== Start section to add  locations ====================== -->
+    <section class="container location-map">
+        <div class="google-map">
+            <h2>Explore our location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.764511043996!2d39.157431!3d21.516942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf8885871f83%3A0x99931ecea4aa5834!2sHawada%20Hotel!5e0!3m2!1sar!2seg!4v1713010061001!5m2!1sar!2seg"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    <!-- ====================== End section to add  locations ====================== -->
+    
+    
+    <!-- ====================== Start logo section ====================== -->
+    <section class="logos container">
+        <div class="logos-slide">
+            <img src="images/logo1.png" alt="">
+            <img src="images/logo2.png" alt="">
+            <img src="images/logo3.png" alt="">
+            <img src="images/logo5.png" alt="">
+            <img src="images/logo6.png" alt="">
+            <img src="images/logo7.png" alt="">
+            <img src="images/logo8.png" alt="">
+            <img src="images/logo9.png" alt="">
+            <img src="images/logo10.png" alt="">
+            <img src="images/logo11.png" alt="">
+            <img src="images/logo12.png" alt="">
+            <img src="images/logo13.png" alt="">
+            <img src="images/logo14.png" alt="">
+            <img src="images/logo15.png" alt="">
+            <img src="images/logo16.png" alt="">
+        </div>
+        <div class="logos-slide">
+            <img src="images/logo1.png" alt="">
+            <img src="images/logo2.png" alt="">
+            <img src="images/logo3.png" alt="">
+            <img src="images/logo5.png" alt="">
+            <img src="images/logo6.png" alt="">
+            <img src="images/logo7.png" alt="">
+            <img src="images/logo8.png" alt="">
+            <img src="images/logo9.png" alt="">
+            <img src="images/logo10.png" alt="">
+            <img src="images/logo11.png" alt="">
+            <img src="images/logo12.png" alt="">
+            <img src="images/logo13.png" alt="">
+            <img src="images/logo14.png" alt="">
+            <img src="images/logo15.png" alt="">
+            <img src="images/logo16.png" alt="">
+        </div>
+        
+    </section>
+
+    <!-- ====================== End logo section ====================== -->
+
+
+    <!-- ======== Start Footer ======== -->
+    <footer class="container">
+        <p>Copyright &copy; <span class="date-of-year">2022</span> All Rights Reserved</p>
+        <button class="btn btn-dark">
+            <a href="#" title="Go to the top" ><i class="fa-solid fa-angles-up"></i></a>
+        </button>
+    </footer>
+    <!-- ======== End Footer ======== -->
+
+</body>
+<script src="app.js"></script>
+</html>
